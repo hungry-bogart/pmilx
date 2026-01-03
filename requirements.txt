@@ -1,0 +1,5 @@
+numpy
+librosa
+opencv-python
+scipy
+tqdm
