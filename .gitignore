@@ -1,0 +1,18 @@
+# Python virtual environments
+pmilx/
+.pmilx/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Output videos
+*.mp4
+
+# OS junk
+.DS_Store
+
+# Virtualenv metadata
+pyvenv.cfg
