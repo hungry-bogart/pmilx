@@ -1,6 +1,16 @@
-# pmilx
+# ***PMILx*** ***"Got Milx?"***
+
+Audio-reactive polygon rendering in Python.
+
+## ***DEMONSTRATION VIDEO***
+
+![PMILX demo](demos/pmilx-demo.gif)
 
 ⚠️ Status: Active Development (MVP / Experimental)
+
+---
+
+## What is pmilx?
 
 **pmilx** is an offline, audio-reactive visual renderer inspired by demoscene pipelines and classic MilkDrop aesthetics, built from scratch in Python.
 

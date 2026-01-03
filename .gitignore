@@ -16,3 +16,6 @@ __pycache__/
 
 # Virtualenv metadata
 pyvenv.cfg
+
+# But allow demo videos
+!demos/*.mp4
