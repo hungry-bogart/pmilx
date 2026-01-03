@@ -10,4 +10,4 @@ I recommend you copy the working render.py script into this experimentation dire
 
 Have fun!
 
-- Hungry Bogart
+~ Hungry Bogart
