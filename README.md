@@ -40,7 +40,6 @@ Also, "pmilx" sounds silly and fun.
 ## Philosophy
 
 - Each frame starts empty and becomes real
-- Randomness is controlled, captured, and earned
 - Effects are separated into clear passes
 - Offline renders enable structures impossible in real-time engines
 
@@ -76,13 +75,20 @@ Place an audio file in the project directory titled audio/ at the top level.
 
 Update AUDIO_FILE in render.py (see CONFIG section at the top of the script, example below.)
 
-Output:
+The audio file you will use must match the name of the audio file set in the configuration section below. Here we have example.mp3, which matches the audio filename the render script will access for visualizations.
+
+>The tests directory contains a preconfigured file.
+>You can use that configuration if you just want to see
+>what PMILx does. The main render script is for actual projects.
+
+Configurations:
 
 ```
 AUDIO_FILE = "./audio/example.mp3"
 OUT_FILE = "./output/no-audio.mp4"
 FINAL_FILE = "./output/final-video-audio.mp4"
 ```
+Make sure:
 
 - Your audio file is named example.mp3
 
@@ -90,7 +96,8 @@ FINAL_FILE = "./output/final-video-audio.mp4"
 
 - Final video muxed with audio via ffmpeg is named final-video-audio.mp4
 
-You can change the AUDIO_FILE, OUT_FILE, and FINAL_FILE variables in render.py to your own audio and output files.
+You can change the AUDIO_FILE, OUT_FILE, and FINAL_FILE variables in render.py to your own audio and output files. Just make sure they match what is provided in the
+configuratin sample above.
 
 ## How to Run the pmilx Script
 
@@ -112,10 +119,12 @@ python3 render.py
 
 > Note: The render may take a few minutes to complete, based on the length of your audio file. As a rule, try to use a shorter audio file for faster renders. This is important when you just want to try pmilx out for fun.
 
+There may be times when it takes a longer time than expected, but you will always
+see the progress bar. This is proof your render is working.
+
 ## Branch Strategy
 
 > main: stable, tested development builds
->
 > dev: active feature development and experiments
 
 ***Only tested features are merged into main.***
@@ -131,6 +140,10 @@ python3 render.py
  - [ ] Config-driven presets
 
  - [ ] Performance optimizations
+
+ - [ ] Options flags so manual configs are no longer necessary
+
+ - [ ] Config files to reproduce multiple outputs
 
 ---
 

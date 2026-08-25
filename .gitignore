@@ -8,6 +8,9 @@ ENV/
 __pycache__/
 *.pyc
 
+# Audio Files
+audio/*mp3
+
 # Output videos
 *.mp4
 
