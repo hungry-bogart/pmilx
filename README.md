@@ -75,7 +75,7 @@ Place an audio file in the project directory titled audio/ at the top level.
 
 Update AUDIO_FILE in render.py (see CONFIG section at the top of the script, example below.)
 
-The audio file you will use must match the name of the audio file set in the configuration section below. Here we have example.mp3, which matches the audio filename the render script will access for visualizations.
+The audio file you use must match the name of the audio file set in the configuration section below. The audio filename the render script will access for visualizations needs to be in the /audio folder to work.
 
 >The tests directory contains a preconfigured file.
 >You can use that configuration if you just want to see
@@ -84,20 +84,23 @@ The audio file you will use must match the name of the audio file set in the con
 Configurations:
 
 ```
-AUDIO_FILE = "./audio/example.mp3"
-OUT_FILE = "./output/no-audio.mp4"
-FINAL_FILE = "./output/final-video-audio.mp4"
+AUDIO_FILE = "./audio/example.mp3" # Sample file. See credits. Filename matches render.py
+OUT_FILE = "./output/no-audio.mp4" # Pmilx generates a no audio file. If you only want the video.
+FINAL_FILE = "./output/final-video-audio.mp4" # This is the rendered video with audio included.
 ```
 Make sure:
 
-- Your audio file is named example.mp3
+- Your audio file is matches`your actual filename.mp3`. The files in the configuration block are edited by hand for now. I realize this is not ideal. It's also an easy fix. I'll try to fix this, soon.
 
-- Your output file is a silent video render. Named no-audio.mp4
+**WARNING: This means you may accidently overwrite files in the output directory if you don't change the values in the config block above.**
 
-- Final video muxed with audio via ffmpeg is named final-video-audio.mp4
+- Your no-audio output file is a silent video render. Named no-audio.mp4
 
-You can change the AUDIO_FILE, OUT_FILE, and FINAL_FILE variables in render.py to your own audio and output files. Just make sure they match what is provided in the
-configuratin sample above.
+- Final video muxed with audio via ffmpeg is named final-video-audio.mp4 or similar.
+
+In sum, you can change the AUDIO_FILE, OUT_FILE, and FINAL_FILE variables in render.py to your own audio and output files. Just make sure they match what is provided in the configuration sample above.
+
+Change the palletes. Adjust the glow values. Do whatever you want. Experiment with the script and add your own code. That's what it's all about.
 
 ## How to Run the pmilx Script
 

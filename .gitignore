@@ -19,6 +19,11 @@ audio/*mp3
 
 # Virtualenv metadata
 pyvenv.cfg
+venv
 
 # But allow demo videos
 !demos/*.mp4
+
+# Ignore custom scripts
+tests/render-green.py
+tests/outputs

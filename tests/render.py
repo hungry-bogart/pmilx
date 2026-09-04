@@ -1,3 +1,4 @@
+#!/usr/bin/python3 env
 # ------------------------------------------------
 # PYTHON AUDIO-REACTIVE POLYGON RENDERER
 # Multi-layer, trail-enabled, fast and hackable

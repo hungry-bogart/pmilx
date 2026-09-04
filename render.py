@@ -1,3 +1,4 @@
+#!/usr/bin/python3 env
 # ------------------------------------------------
 # PYTHON AUDIO-REACTIVE POLYGON RENDERER
 # Multi-layer, trail-enabled, fast and hackable
@@ -16,9 +17,11 @@ import random
 # CONFIGURATION
 # ================================
 # File names and directory information
-AUDIO_FILE = "./example.mp3"
-OUT_FILE = "./no-audio.mp4"
-FINAL_FILE = "./final-video-audio.mp4"
+# Change these values to match your
+# desired source audio and output filename.
+AUDIO_FILE = "./audio/example.mp3"  # <-- change the audio filename
+OUT_FILE = "./output/no-audio.mp4"
+FINAL_FILE = "./output/final-video-audio.mp4"
 
 # ================================
 # PALLETTE
