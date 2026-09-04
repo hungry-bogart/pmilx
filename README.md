@@ -90,7 +90,7 @@ FINAL_FILE = "./output/final-video-audio.mp4" # This is the rendered video with 
 ```
 Make sure:
 
-- Your audio file is matches`your actual filename.mp3`. The files in the configuration block are edited by hand for now. I realize this is not ideal. It's also an easy fix. I'll try to fix this, soon.
+- Your audio file matches`your actual filename.mp3`. The files in the configuration block are edited by hand for now. I realize this is not ideal. It's also an easy fix. I'll try to fix this, soon.
 
 **WARNING: This means you may accidently overwrite files in the output directory if you don't change the values in the config block above.**
 
